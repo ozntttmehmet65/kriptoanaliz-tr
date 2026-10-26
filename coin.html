@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Detay | KriptoAnaliz TR</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="imagine_images/Jzurw.jpg" type="image/jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="imagine_images/Jzurw.jpg" alt="Logo" class="logo-img">
+                <a href="index.html" style="color:inherit; text-decoration:none">KriptoAnaliz <span class="accent">TR</span></a>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Ana Sayfa</a>
+                <a href="portfolio.html">Portföy</a>
+            </nav>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+        </div>
+    </header>
+
+    <main class="section">
+        <div id="coinHeader" style="margin-bottom:2rem"></div>
+        <div class="chart-container" style="height:450px; margin-bottom:2rem">
+            <canvas id="coinChart"></canvas>
+        </div>
+        <div id="coinStats" class="global-stats" style="margin-bottom:2rem"></div>
+        <div id="analysisExtra"></div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2026 KriptoAnaliz TR | Veriler: CoinGecko</p>
+        </div>
+    </footer>
+
+    <script src="coin.js"></script>
+</body>
+</html>
